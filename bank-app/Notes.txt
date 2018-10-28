@@ -1,0 +1,194 @@
+
+
+----------------------------------------------
+what is object ?
+	- data,info,attr        ===> state
+	- function,method,oprn  ==>  behavior
+	- loc,addr,reference    ==>  identity 
+	
+	i.e obj => sbi
+	
+----------------------------------------------
+what is class ?	
+
+	==> description ( s & b ) of similar objects
+	
+-----------------------------------------------
+OO concepts	
+-----------------------------------------------
+
+1. Interface / Abstraction
+
+2. implementation / Encapsulation
+
+3. inheritance
+
+4. polymorphism
+
+----------------------------------------------
+	
+bank-app:
+
+use-case : txr(amout,fromAcc,toAcc)
+
+----------------------------------------------
+step-1: Model
+----------------------------------------------
+
+	- Customer
+	- Account
+	- Txn
+
+
+----------------------------------------------
+step-2: data/repository layer ==> persisting logic
+----------------------------------------------
+
+  - AccountRepository
+
+
+----------------------------------------------
+step-2: service/business layer ==> processing logic
+----------------------------------------------
+
+  - TxrService
+
+
+
+
+
+-----------------------------------------------
+OO principles	
+-----------------------------------------------
+
+
+S.O.L.I.D. STANDS FOR:
+	
+	S — Single responsibility principle
+	O — Open for extension , closed for modification : principle
+	L — Liskov substitution principle
+	I — Interface segregation principle
+	D — Dependency Inversion principle
+
+
+-----------------------------------------------
+OO patterns	
+-----------------------------------------------
+
+	=> creational
+	=> structural
+	=> behavioralÏ
+
+-----------------------------------------------
+
+
+
+
+---------------------------------------------
+FP
+---------------------------------------------
+
+
+
+Condition byAmountCondition = new Condition() {
+			@Override
+			public boolean test(Txn txn) {
+				return txn.getAmount() == amount;
+			}
+		};
+		
+		
+		|
+		|
+		|
+		V
+		
+
+
+Condition byAmountCondition = 
+			public boolean test(Txn txn) {
+				return txn.getAmount() == amount;
+			}
+				
+		
+
+		|
+		|
+		|
+		V
+		
+
+
+
+Condition byAmountCondition = 
+			 boolean test(Txn txn) {
+				return txn.getAmount() == amount;
+			}
+
+
+
+		|
+		|
+		|
+		V
+		
+		
+
+Condition byAmountCondition = 
+			  test(Txn txn) {
+				return txn.getAmount() == amount;
+			}
+		
+		|
+		|
+		|
+		V
+		
+
+Condition byAmountCondition = 
+			  (Txn txn) -> {
+				return txn.getAmount() == amount;
+			}
+			
+
+		|
+		|
+		|
+		V
+					
+			
+
+Condition byAmountCondition = 
+			  (txn) -> {
+				return txn.getAmount() == amount;
+			}			
+			
+			
+			
+        |
+		|
+		|
+		V
+
+
+Condition byAmountCondition = 
+			  (txn) ->txn.getAmount() == amount;
+							
+			
+			
+        |
+		|
+		|
+		V		
+						
+
+Condition byAmountCondition = txn ->txn.getAmount() == amount;
+
+
+
+
+
+
+
+									
+	

@@ -1,0 +1,31 @@
+
+
+-------------------------
+FP principles
+-------------------------
+
+--------------------------------------------------------------
+
+ in FP,
+ 
+ 	all functions are first-class values/citizens
+ 	
+ 	
+ 	    - A function can be stored in a variable or value
+        - The return value of a function can be a function
+        - A parameter of a function can be a function
+ 	
+ 	
+ 	A higher order function
+
+        - A function whose return value is a function
+        - A function with a parameter that is a function
+        
+     
+ --------------------------------------------------------------      
+       
+    
+    
+    
+    
+        
